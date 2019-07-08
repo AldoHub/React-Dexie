@@ -1,13 +1,161 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Righteous';
+  background: rgb(149,0,255);
+  background: -moz-radial-gradient(circle, rgba(149,0,255,1) 0%, rgba(3,0,84,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(149,0,255,1) 0%, rgba(3,0,84,1) 100%);
+  background: radial-gradient(circle, rgba(149,0,255,1) 0%, rgba(3,0,84,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9500ff",endColorstr="#030054",GradientType=1);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+
+body * {
+  transition: all 300ms ease-in-out;
+
+}
+
+
+.App{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+}
+
+header {
+  height: 260px;
+  color: #eee;
+  
+  margin-bottom: 30px;
+}
+
+header > div {
+  width: 70%;
+  margin: 0 auto;
+  
+}
+
+
+header > div h1{
+  margin: 0px;
+  padding-top: 70px;
+  font-size: 5rem;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+form input[type="text"], form textarea {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  background: none;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 18px;
+  color: #eee;
+  font-family: "verdana";
+}
+
+form input[type="submit"]{
+  background: #FDFC47;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   padding: 10px 15px;
+  border: none;
+  color: #222;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+input[type="file"] {
+  display: none;
+}
+label.cover {
+  margin-top: -5px;
+  display: block;
+  width: 125px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  border: 1px solid #eee;
+  text-indent: 10px;
+  
+
+}
+
+label.cover i{
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+.postsContainer {
+  display: flex;
+  margin: 40px auto;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.post {
+  width: 320px;
+  min-width: 320px;
+  background: #eee;
+  padding: 10px;
+ 
+  font-family: "verdana";
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 88px -23px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 88px -23px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 88px -23px rgba(0,0,0,0.75);
+}
+
+.post h2 {
+  font-family: 'Righteous';
+}
+
+
+
+.post > div {
+  height: 240px;
+  width: 100%;
+  background-size: 200% !important;
+  border-radius: 5px;
+  
+}
+.post > div:hover {
+  background-size: 210% !important;
+}
+label {
+  display: block;
+  color: #eee;
+  margin-bottom: 10px;
+}
+.delete {
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  padding: 10px;
+  color: #eee;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.message {
+  width: 70%;
+  text-align: center;
+  padding-top: 120px;
+  margin: 0 auto;
+  color: #eee;
+  
 }

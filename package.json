@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dexie": "^2.0.4",
     "react": "^16.8.6",
+    "react-detect-offline": "^2.4.0",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
